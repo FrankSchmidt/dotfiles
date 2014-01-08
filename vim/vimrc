@@ -1,4 +1,4 @@
-set runtimepath+=/Users/bughunter/dotfiles/vim/addons/vam.vim
+set runtimepath+=$HOME/dotfiles/vim/addons/vam.vim
 call vam#ActivateAddons(['Solarized', 'The_NERD_tree'])
 " put this line first in ~/.vimrc
 set nocompatible | filetype indent plugin on | syn on
