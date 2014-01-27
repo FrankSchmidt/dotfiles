@@ -1,0 +1,3 @@
+switches=-m5 -rr10 -ol -msjpg;mp3;avi;zip;rar;tar;gz;jpg
+RAR='-s -md1024'
+export RAR

@@ -1,13 +1,18 @@
-set runtimepath+=$HOME/dotfiles/vim/addons/vam.vim
+set runtimepath+=$HOME/.vim/addons/vam.vim
 call vam#ActivateAddons(['Solarized', 'The_NERD_tree'])
 " put this line first in ~/.vimrc
+set number
 set nocompatible | filetype indent plugin on | syn on
 syntax enable
 set background=dark
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+let g:solarized_termtrans = 1
 colorscheme solarized
-
 
 " NERDTree
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q
 let NERDTreeMouseMode = 2
+
+let g:solarized_visibility =  "low"
